@@ -15,9 +15,24 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3RS-lT-Jzi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3RS-lT-Jzi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hJL-qP-tvr"/>
+                            <constraint firstItem="3RS-lT-Jzi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kEf-Q0-vev"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3RS-lT-Jzi" secondAttribute="trailing" id="ke1-Ar-462"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3RS-lT-Jzi" secondAttribute="bottom" id="uqE-B6-kyZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="3RS-lT-Jzi" id="Fl4-GV-omT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +67,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEB-KQ-abP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="814" y="-27"/>
+        </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="lHq-Z0-g81">
+            <objects>
+                <viewController storyboardIdentifier="EventDetailViewController" id="TlF-MA-RhR" customClass="EventDetailViewController" customModule="EventsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YzX-TD-gvo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ec-jh-hvb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IpZ-ov-c31" customClass="TimeRemainingStackView" customModule="EventsApp" customModuleProvider="target">
+                                <rect key="frame" x="105" y="184" width="110" height="200"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KTN-6h-UYv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9ec-jh-hvb" secondAttribute="trailing" id="9Xe-r4-l53"/>
+                            <constraint firstAttribute="bottom" secondItem="9ec-jh-hvb" secondAttribute="bottom" id="JBN-hS-sng"/>
+                            <constraint firstItem="9ec-jh-hvb" firstAttribute="leading" secondItem="YzX-TD-gvo" secondAttribute="leading" id="KeU-kL-a3D"/>
+                            <constraint firstItem="9ec-jh-hvb" firstAttribute="top" secondItem="YzX-TD-gvo" secondAttribute="top" id="Rjb-A2-657"/>
+                            <constraint firstItem="IpZ-ov-c31" firstAttribute="centerX" secondItem="YzX-TD-gvo" secondAttribute="centerX" id="ixW-6q-Uln"/>
+                            <constraint firstItem="IpZ-ov-c31" firstAttribute="centerY" secondItem="YzX-TD-gvo" secondAttribute="centerY" id="zcu-bS-EHb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="9ec-jh-hvb" id="rxs-Aj-fYg"/>
+                        <outlet property="timeRemainingStackView" destination="IpZ-ov-c31" id="VEE-Mb-FMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0N-tT-zF9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489" y="-27"/>
         </scene>
     </scenes>
     <resources>
