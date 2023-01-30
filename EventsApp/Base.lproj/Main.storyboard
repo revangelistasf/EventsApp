@@ -103,6 +103,36 @@
             </objects>
             <point key="canvasLocation" x="1489" y="-27"/>
         </scene>
+        <!--Edit Event View Controller-->
+        <scene sceneID="dQH-qh-9df">
+            <objects>
+                <viewController storyboardIdentifier="EditEventViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="upp-yu-Kg8" customClass="EditEventViewController" customModule="EventsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V9d-Bo-0Xq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YmU-oZ-hoC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uMy-Tk-YEK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YmU-oZ-hoC" firstAttribute="leading" secondItem="uMy-Tk-YEK" secondAttribute="leading" id="2ez-N0-zyA"/>
+                            <constraint firstItem="YmU-oZ-hoC" firstAttribute="top" secondItem="uMy-Tk-YEK" secondAttribute="top" id="AJJ-UC-SPU"/>
+                            <constraint firstItem="uMy-Tk-YEK" firstAttribute="trailing" secondItem="YmU-oZ-hoC" secondAttribute="trailing" id="Wei-O8-O0z"/>
+                            <constraint firstItem="uMy-Tk-YEK" firstAttribute="bottom" secondItem="YmU-oZ-hoC" secondAttribute="bottom" id="ZCU-eh-sEd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="YmU-oZ-hoC" id="vKZ-6W-CqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYe-os-SNM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186" y="-27"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

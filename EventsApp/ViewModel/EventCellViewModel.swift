@@ -3,7 +3,7 @@ import CoreData
 
 struct EventCellViewModel {
     let date = Date()
-    private static let imageCache = NSCache<NSString, UIImage>()
+    static let imageCache = NSCache<NSString, UIImage>()
     var onSelect: (NSManagedObjectID) -> Void = { _ in }
 
     private var cacheKey: String {

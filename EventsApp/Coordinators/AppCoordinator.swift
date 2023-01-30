@@ -5,6 +5,10 @@ protocol Coordinator: AnyObject {
     func start()
 }
 
+extension Coordinator {
+    func childDidFinish(_ childCoordinator: Coordinator) { }
+}
+
 final class AppCoordinator: Coordinator {
     private(set) var childCoordinators: [Coordinator] = []
     
