@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		46037D1A298072AC003C0362 /* TimeRemainingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46037D19298072AC003C0362 /* TimeRemainingStackView.swift */; };
 		46037D1C2980733C003C0362 /* TimeRemainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46037D1B2980733C003C0362 /* TimeRemainingViewModel.swift */; };
+		463D9C27298AFEA600FE04CA /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463D9C26298AFEA600FE04CA /* EventService.swift */; };
 		466288EE2984B67C00CAAA23 /* EditEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466288ED2984B67C00CAAA23 /* EditEventCoordinator.swift */; };
 		466288F02984B70200CAAA23 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466288EF2984B70200CAAA23 /* EditEventViewController.swift */; };
 		466288F22984B7B700CAAA23 /* EditEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466288F12984B7B700CAAA23 /* EditEventViewModel.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		46037D19298072AC003C0362 /* TimeRemainingStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingStackView.swift; sourceTree = "<group>"; };
 		46037D1B2980733C003C0362 /* TimeRemainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingViewModel.swift; sourceTree = "<group>"; };
+		463D9C26298AFEA600FE04CA /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		466288ED2984B67C00CAAA23 /* EditEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventCoordinator.swift; sourceTree = "<group>"; };
 		466288EF2984B70200CAAA23 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 		466288F12984B7B700CAAA23 /* EditEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewModel.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463D9C25298AFE9900FE04CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				463D9C26298AFEA600FE04CA /* EventService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		46B03D57296DE3EA00C31DAA = {
 			isa = PBXGroup;
 			children = (
@@ -112,21 +122,22 @@
 		46B03D62296DE3EA00C31DAA /* EventsApp */ = {
 			isa = PBXGroup;
 			children = (
-				46B03D81296DEB8700C31DAA /* Extensions */,
 				46B03D71296DE3ED00C31DAA /* Info.plist */,
 				46B03D63296DE3EA00C31DAA /* AppDelegate.swift */,
 				46B03D85296DEC4D00C31DAA /* CoreDataManager.swift */,
+				46BC37B12972E62100F91DF7 /* EventsCellBuilder.swift */,
 				46B03D65296DE3EA00C31DAA /* SceneDelegate.swift */,
 				46B03D67296DE3EA00C31DAA /* ViewController.swift */,
 				46B03D6C296DE3ED00C31DAA /* Assets.xcassets */,
 				46B03D82296DEBD300C31DAA /* EventsApp.xcdatamodeld */,
 				46B03D6E296DE3ED00C31DAA /* LaunchScreen.storyboard */,
 				46B03D69296DE3EA00C31DAA /* Main.storyboard */,
-				46FBA49629724936002F0AC9 /* Views */,
 				46B03D80296DEB7A00C31DAA /* Controllers */,
 				46B03D7F296DEB7300C31DAA /* Coordinators */,
+				46B03D81296DEB8700C31DAA /* Extensions */,
 				46B03D91296E33D800C31DAA /* ViewModel */,
-				46BC37B12972E62100F91DF7 /* EventsCellBuilder.swift */,
+				46FBA49629724936002F0AC9 /* Views */,
+				463D9C25298AFE9900FE04CA /* Services */,
 			);
 			path = EventsApp;
 			sourceTree = "<group>";
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463D9C27298AFEA600FE04CA /* EventService.swift in Sources */,
 				46BC37B829735A2100F91DF7 /* UIView+Extensions.swift in Sources */,
 				4682168E297742D700095870 /* EventDetailViewController.swift in Sources */,
 				466288EE2984B67C00CAAA23 /* EditEventCoordinator.swift in Sources */,
